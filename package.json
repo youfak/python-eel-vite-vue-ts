@@ -1,0 +1,36 @@
+{
+  "name": "python-eel-vue",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "run:dev": "vue-tsc --noEmit && vite build &&python main.py",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "update": "ncu -u && npm",
+    "lint-fix": "eslint --fix --ext .js --ext .vue src/"
+  },
+  "dependencies": {
+    "vue": "^3.2.33"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.35",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
+    "@vitejs/plugin-vue": "^2.3.2",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-define-config": "^1.2.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^9.0.1",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.4",
+    "vite": "^2.9.8",
+    "vite-plugin-html": "^3.2.0",
+    "vue-eslint-parser": "^8.2.0",
+    "vue-tsc": "^0.34.11"
+  }
+}

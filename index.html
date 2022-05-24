@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= title %></title>
+    <%- injectScript %>
+</head>
+  <body>
+    <noscript>
+    <strong>We're sorry but <%= title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+</noscript>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+
+<script>
+    // 将js中的函数暴露给python,这个貌似不怎么需要用
+    eel.expose(js_fun);
+    function js_fun(msg) {
+        alert('你好啊' + msg)
+    }
+</script>
+</html>
