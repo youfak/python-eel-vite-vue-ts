@@ -24,3 +24,4 @@ npm install
 npm run dev
 python main.py
 ```
+![image](https://user-images.githubusercontent.com/27138744/169967035-5ebbabad-a541-4011-93e0-22e14faefceb.png)
